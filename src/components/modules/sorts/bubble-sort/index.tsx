@@ -1,6 +1,7 @@
 import { SnippetPlayground } from "@/components/snippet-playground"
 
 import bubbleSortCode from "@/snippets/sorts/bubble-sort.ts?raw"
+import { BubbleSortPreview } from "./components/bubble-sort-preview"
 
 export default function BubbleSortPage(): React.JSX.Element {
 	return (
@@ -9,7 +10,7 @@ export default function BubbleSortPage(): React.JSX.Element {
 			code={bubbleSortCode}
 			language="typescript"
 		>
-			Test
+			<BubbleSortPreview />
 		</SnippetPlayground>
 	)
 }
