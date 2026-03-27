@@ -10,11 +10,11 @@ export const navMenu: Nav[] = [
 		items: [
 			{
 				title: "Bubble Sort",
-				url: "#",
+				url: "/sorts/bubble-sort",
 			},
 			{
 				title: "Quick Sort",
-				url: "#",
+				url: "/sorts/quick-sort",
 			},
 		],
 	},

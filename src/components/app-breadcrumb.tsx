@@ -7,9 +7,10 @@ import {
 	BreadcrumbPage,
 	BreadcrumbSeparator,
 } from "./ui/breadcrumb"
+import { Link, useLocation } from "react-router-dom"
 
 export function AppBreadcrumb(): React.JSX.Element {
-	const pathnames = location.pathname.split("/").filter((x) => x)
+	const pathnames = useLocation().pathname.split("/").filter(Boolean)
 
 	return (
 		<Breadcrumb>
@@ -19,7 +20,7 @@ export function AppBreadcrumb(): React.JSX.Element {
 						<BreadcrumbPage>Home</BreadcrumbPage>
 					) : (
 						<BreadcrumbLink asChild>
-							<a href="/">Home</a>
+							<Link to="/">Home</Link>
 						</BreadcrumbLink>
 					)}
 				</BreadcrumbItem>
@@ -36,7 +37,7 @@ export function AppBreadcrumb(): React.JSX.Element {
 									<BreadcrumbPage>{value}</BreadcrumbPage>
 								) : (
 									<BreadcrumbLink asChild>
-										<a href={to}>{value}</a>
+										<Link to={to}>{value}</Link>
 									</BreadcrumbLink>
 								)}
 							</BreadcrumbItem>
