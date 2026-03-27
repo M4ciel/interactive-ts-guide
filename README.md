@@ -13,7 +13,7 @@
 <br />
 <div align="center">
     <a href="https://github.com/M4ciel/interactive-ts-guide">
-        <img src="public/logo_interactive.png" alt="logo" width="386" height="84">
+        <img src="public/logo_interactive.svg" alt="logo" width="386" height="84">
     </a>
     <h3 align="center">Interactive TypeScript Guide</h3>
     <p>
