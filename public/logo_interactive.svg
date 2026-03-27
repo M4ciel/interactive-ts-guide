@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536.01 107.76">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        fill: #0bb66a;
+        font-family: Nunito-Black, Nunito;
+        font-size: 94.32px;
+        font-weight: 800;
+      }
+
+      .cls-3 {
+        letter-spacing: .04em;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(0 80.41)"><tspan class="cls-3" x="0" y="0">{</tspan><tspan class="cls-1" x="45.08" y="0">T</tspan><tspan x="103.84" y="0">S} GUIDE</tspan></text>
+</svg>
