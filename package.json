@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "commit": "cz"
   },
   "dependencies": {
     "@fontsource-variable/nunito-sans": "^5.2.7",
@@ -31,6 +32,8 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.2.0",
+    "commitizen": "^4.3.1",
+    "cz-emoji-conventional": "^1.2.1",
     "eslint": "^9.39.4",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
@@ -40,5 +43,11 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.57.1",
     "vite": "^7.3.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-emoji-conventional",
+      "useGitmojis": true
+    }
   }
 }
