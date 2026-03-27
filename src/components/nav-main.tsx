@@ -15,6 +15,7 @@ import {
 	CollapsibleTrigger,
 } from "./ui/collapsible"
 import type { Nav } from "@/types/nav"
+import { Link } from "react-router-dom"
 
 interface NavMainProps {
 	items: Nav[]
@@ -45,9 +46,9 @@ export function NavMain({ items }: NavMainProps) {
 									{item.items?.map((subItem) => (
 										<SidebarMenuSubItem key={subItem.title}>
 											<SidebarMenuSubButton asChild>
-												<a href={subItem.url}>
+												<Link to={subItem.url}>
 													<span>{subItem.title}</span>
-												</a>
+												</Link>
 											</SidebarMenuSubButton>
 										</SidebarMenuSubItem>
 									))}
